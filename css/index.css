@@ -63,7 +63,6 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 .navigation {
 	display: flex;
@@ -81,8 +80,6 @@ nav a {
 	margin-left: 0px;
 	margin-bottom: -12px;
 }
-
-
 
 .container {
   text-align: center;
@@ -188,7 +185,6 @@ hr {
 	justify-content: space-between;
 	
 }
-
 
 .contentbox {
 	height: 215px;
