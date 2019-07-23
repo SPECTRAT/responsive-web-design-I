@@ -64,9 +64,9 @@ h1, h2, h3, h4, h5 {
 }
 
 
-.navigation {
-	display: flex;
-	justify-content: center;
+nav {
+  display: flex;
+  justify-content: center;
 }
 
 nav a {
@@ -156,6 +156,43 @@ footer {
 hr {
 	width: 880px;
 	margin-bottom: 30px;
+
+}
+
+/* tablet stylings */
+
+@media(max-width: 800px)
+{
+  /* changes here */
+  nav {
+    display: flex;
+    flex-flow: column-reverse;
+  }
+
+  .nav-links {
+    margin: 0px auto 0px auto;
+  }
+
+  .logo {
+    width: 183px;
+    height: 36px;
+    margin: 20px auto 50px auto;
+  }
+
+  .container {
+    margin-top: 0px;
+  }
+
+  .container img {
+    display: none;
+  }
+
+
+}
+
+/* mobile stylings */
+
+@media(max-width: 500px){
 
 }
 
