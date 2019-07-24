@@ -63,10 +63,18 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
+/* CSS Start*/
+
+.navigation {
+  max-width: 876px;
+  margin: 0 auto;
+}
+
+/* TODO fix inbetween state of spacing (813 626)*/
 
 nav {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   margin-top: 20px;
 }
 
@@ -86,7 +94,7 @@ nav a {
 	padding-bottom: 60px; 
 	display: flex;
 	justify-content: center;
-	margin-top: 70px;
+  margin-top: 70px;
 }
 
 h1 {
@@ -105,28 +113,38 @@ header img {
 	margin-left: 75px;
 }
 
+.main-content{
+  display: flex;
+  flex-direction: column;
+  max-width: 876px;
+  margin: 0 auto;
+}
+
 .topinfo {
 	display: flex;
-	justify-content: center;
+  justify-content: space-between;
+  max-width: 100%;
+  margin-bottom: 25px;
+  
 }
 
 .top-left {
-	width: 440px;
+  width: 440px;
 }
 
 .top-right {
-	width: 440px;
+  width: 440px;
+  margin-left: 20px;
 }
 
 .middle-img {
-	display: block;
-	margin: 30px auto 30px auto;
+  max-width: 100%;
 }
 
 .bottom-info {
-	margin-bottom: 30px;
 	display: flex;
-	justify-content: center;
+  justify-content: center;
+  margin: 30px 0px;
 }
 
 .bottom-left {
@@ -144,7 +162,6 @@ header img {
 }
 
 .contact {
-	margin-left: 15%;
 	margin-bottom: 50px;
 }
 
@@ -153,17 +170,10 @@ footer {
 }
 
 
-hr {
-	width: 880px;
-	margin-bottom: 30px;
-
-}
-
 /* tablet stylings */
 
 @media(max-width: 800px)
 {
-  /* changes here */
   nav {
     display: flex;
     flex-flow: column-reverse;
@@ -197,6 +207,8 @@ hr {
 }
 
 /* Service Page*/
+
+/* TODO fix nav width and spacing */
 
 .service-header{
 	margin: 20px auto 0px auto;
@@ -265,6 +277,8 @@ margin-right: 60px;
 }
 
 /*About Page*/
+
+/* TODO fix nav width and spacing */
 
 .about-header {
 	max-width: 880px;
