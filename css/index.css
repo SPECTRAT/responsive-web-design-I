@@ -67,6 +67,11 @@ h1, h2, h3, h4, h5 {
 nav {
   display: flex;
   justify-content: center;
+  margin-top: 20px;
+}
+
+nav img {
+  margin-top: -12px;
 }
 
 nav a {
@@ -74,11 +79,6 @@ nav a {
 	text-decoration: none;
 	padding: 0px 50px 0px 0px;
 	
-}
-
-.logo {
-	margin-left: 0px;
-	margin-bottom: -12px;
 }
 
 .container {
