@@ -215,25 +215,52 @@ footer {
 
 @media(max-width: 500px){
 
+  /* TODO fix header text resizing */
+
   .logo {
-    display: none;
+    margin: 20px auto 20px auto;
+  }
+
+  nav {
+    margin-top: 0px;
+  }
+
+  .navigation {
+    max-width: 100%;
+    margin-top: 0px;
   }
 
   .nav-links {
     display: flex;
     flex-direction: column;
-    align-items: center;
     width: 100%;
+    
   }
 
-  a {
-    border-top: 1px solid lightgray; 
+  .link {
+    border-top: 1px solid lightgray;
+    margin: 5px auto;
     width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    padding-right: 0px;
   }
 
-  a:last-child {
+  .link:last-child {
     border-bottom: 1px solid lightgray;
+    padding-bottom: 10px;
   }
+
+  .topinfo {
+    flex-direction: column;
+  }
+
+  .bottom-info {
+    flex-direction: column;
+  }
+
+
+
 }
 
 /* Service Page*/
