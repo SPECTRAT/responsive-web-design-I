@@ -85,9 +85,14 @@ nav img {
 nav a {
 	color: grey;
 	text-decoration: none;
-	padding: 0px 50px 0px 0px;
-	
+  padding: 0px 55px 0px 0px;
 }
+
+nav a:last-child {
+  padding: 0px;
+}
+
+
 
 .container {
   text-align: center;
@@ -176,8 +181,7 @@ footer {
 
 /* tablet stylings */
 
-@media(max-width: 800px)
-{
+@media(max-width: 800px) {
 
   .navigation {
     max-width: 90%;
@@ -213,7 +217,7 @@ footer {
 
 /* mobile stylings */
 
-@media(max-width: 500px){
+@media(max-width: 500px) {
 
   /* TODO fix header text resizing */
 
@@ -249,17 +253,53 @@ footer {
   .link:last-child {
     border-bottom: 1px solid lightgray;
     padding-bottom: 10px;
+    padding-top: 10px;
   }
 
   .topinfo {
     flex-direction: column;
+    margin: 40px auto;
+    
+  }
+
+  .top-right {
+    margin-left: 0px;
+    margin-top: 40px;
+    width: 100%;
+  }
+
+  .top-left {
+    width: 100%;
   }
 
   .bottom-info {
     flex-direction: column;
+    
+    
   }
 
+  .bottom-left {
+    width: 100%;
+  }
 
+  .bottom-middle {
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .bottom-right {
+    width: 100%;
+    margin-left: 0px;
+    margin-top: 40px;
+  }
+
+}
+
+@media(max-width:350px) {
+
+  h1 {
+    font-size: 40px; 
+  }
 
 }
 
