@@ -118,13 +118,15 @@ header img {
   flex-direction: column;
   max-width: 876px;
   margin: 0 auto;
+  border-top: 1.5px solid black;
 }
 
 .topinfo {
 	display: flex;
   justify-content: space-between;
   max-width: 100%;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
+  margin-top: 30px;
   
 }
 
@@ -143,13 +145,15 @@ header img {
 
 .bottom-info {
 	display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   margin: 30px 0px;
+  border-bottom: 1.5px solid black;
+  padding-bottom: 30px;
 }
 
 .bottom-left {
 	width: 275px;
-	margin-right: 20px;
+  margin-right: 20px;
 }
 
 .bottom-middle {
@@ -174,6 +178,11 @@ footer {
 
 @media(max-width: 800px)
 {
+
+  .navigation {
+    max-width: 90%;
+  }
+  /*TODO fix wrapping of nav links*/
   nav {
     display: flex;
     flex-flow: column-reverse;
@@ -197,13 +206,34 @@ footer {
     display: none;
   }
 
-
+  .main-content {
+    max-width: 90%;
+  }
 }
 
 /* mobile stylings */
 
 @media(max-width: 500px){
 
+  .logo {
+    display: none;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  a {
+    border-top: 1px solid lightgray; 
+    width: 100%;
+  }
+
+  a:last-child {
+    border-bottom: 1px solid lightgray;
+  }
 }
 
 /* Service Page*/
