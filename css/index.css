@@ -1,3 +1,408 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style-type: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* CSS Start*/
+
+.navigation {
+  max-width: 876px;
+  margin: 0 auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+nav img {
+  margin-top: -12px;
+}
+
+nav a {
+	color: grey;
+	text-decoration: none;
+  padding: 0px 55px 0px 0px;
+}
+
+nav a:last-child {
+  padding: 0px;
+}
+
+.container {
+  text-align: center;
+	padding-bottom: 60px; 
+	display: flex;
+	justify-content: center;
+  margin-top: 70px;
+}
+
+h1 {
+	font-size: 70px;
+	padding-top: 60px;
+}
+
+button {
+  background: white;
+  border: 1px solid black;
+  width: 130px;
+  height: 25px;  
+}
+
+header img {
+	margin-left: 75px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  max-width: 876px;
+  margin: 0 auto;
+  border-top: 1.5px solid black;
+}
+
+.topinfo {
+	display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.top-left {
+  width: 440px;
+}
+
+.top-right {
+  width: 440px;
+  margin-left: 20px;
+}
+
+.middle-img {
+  max-width: 100%;
+}
+
+.bottom-info {
+	display: flex;
+  justify-content: space-evenly;
+  margin: 30px 0px;
+  border-bottom: 1.5px solid black;
+  padding-bottom: 30px;
+}
+
+.bottom-left {
+	width: 275px;
+  margin-right: 20px;
+}
+
+.bottom-middle {
+	width: 275px;
+}
+
+.bottom-right {
+	width: 275px;
+	margin-left: 20px;
+}
+
+.contact {
+	margin-bottom: 50px;
+}
+
+footer {
+	text-align: center;
+}
+
+/* tablet stylings */
+
+@media(max-width: 800px) {
+
+  .navigation {
+    max-width: 90%;
+  }
+  
+  nav {
+    display: flex;
+    flex-flow: column-reverse;
+  }
+
+  .nav-links {
+    margin: 0px auto 0px auto;
+  }
+
+  .logo {
+    width: 183px;
+    height: 36px;
+    margin: 20px auto 50px auto;
+  }
+
+  .container {
+    margin-top: 0px;
+  }
+
+  .container img {
+    display: none;
+  }
+
+  main {
+    max-width: 90%;
+  }
+}
+
+@media(max-width:680px) {
+
+  .link {
+    padding-right: 23px;
+  }
+
+}
+
+/* mobile stylings */
+
+@media(max-width: 500px) {
+
+  .logo {
+    margin: 20px auto 20px auto;
+  }
+
+  nav {
+    margin-top: 0px;
+  }
+
+  .navigation {
+    max-width: 100%;
+    margin-top: 0px;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .link {
+    border-top: 1px solid lightgray;
+    margin: 5px auto;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    padding-right: 0px;
+  }
+
+  .link:last-child {
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+
+  .topinfo {
+    flex-direction: column;
+    margin: 40px auto;
+  }
+
+  .top-right {
+    margin-left: 0px;
+    margin-top: 40px;
+    width: 100%;
+  }
+
+  .top-left {
+    width: 100%;
+  }
+
+  .bottom-info {
+    flex-direction: column;
+  }
+
+  .bottom-left {
+    width: 100%;
+  }
+
+  .bottom-middle {
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .bottom-right {
+    width: 100%;
+    margin-left: 0px;
+    margin-top: 40px;
+  }
+
+}
+
+@media(max-width:350px) {
+
+  h1 {
+    font-size: 40px; 
+  }
+/* Fixes header text overflow issue*/
+}
+
+/* Service Page*/
+
+/* TODO fix nav width and spacing */
+
+.service-header{
+	margin: 20px auto 0px auto;
+	width: 880px;
+	border-bottom: solid black 1.5px;
+	padding-bottom: 30px;
+}
+
+.services-header-img {
+	margin: 30px auto 30px auto;
+}
+
+.service-header h1{
+	font-size: 25px;
+	padding-top: 0px;
+}
+
+.service-list {
+	max-width: 880px;
+	display: flex;
+	flex-wrap:wrap;
+	margin: 30px auto 0px auto;
+	justify-content: space-between;
+	
+}
+
+.contentbox {
+	height: 215px;
+	width: 425px;
+	margin: 0px 0px 30px 0px;
+	background-color: #f0f0f0;
+	border: 1px solid black;
+	padding: 20px;
+}
+
+.contentbox button {
+	margin-top: 20px;
+	border-radius: 5px;
+	width: 140px;
+	height: 30px;
+}
+ul {
+	list-style-type: square; 
+	padding-left: 15px;
+	margin-top: 20px;
+	line-height: 2
+}
+
+li {
+	padding-left: 20px;
+}
+
+.facts {
+	display: flex;
+	margin: 0px auto 80px auto;
+	padding-top: 30px;
+	width: 880px;
+	justify-content: center;
+	border-top: solid black 1.5px;
+	
+}
+
+.facts-child {
+	width: 400px;
+margin-right: 60px;
+}
+
+/*About Page*/
+
+/* TODO fix nav width and spacing */
+
+.about-header {
+	max-width: 880px;
+	margin: auto;
+}
+
+.ourStory {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	max-width: 880px;
+	margin: 30px auto 0px auto;
+	border-top: 1.5px solid black;
+	border-bottom: 1.5px solid black;
+	padding: 30px 0px 30px 0px;
+}
+
+.pagebreak {
+	display: block;
+	margin: 30px auto 30px auto;
+}
+
+.story {
+	width: 250px;
+	margin-left: 40px;
+}
+.block {
+	color:white;
+}
+
+.about-foot {
+	margin-top: 70px;
+}
 
